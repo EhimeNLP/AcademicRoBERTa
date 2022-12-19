@@ -1,6 +1,7 @@
 # AcademicRoBERTa
 
 We pretrained a RoBERTa-based Japanese masked language model on paper abstracts from the academic database CiNii Articles.
+A Japanese Masked Language Model for Academic Domain(https://aclanthology.org/2022.sdp-1.16/)
 
 ## Download
 ```
