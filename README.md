@@ -13,13 +13,11 @@ sentencepiece <br>
 tensorboardX (optional) <br>
 
 ## Preprocess
+データ形式はsrc文とlabelの間にタブ区切りを想定しています。
 ```
-python ./apply_sp.py $TRAIN_SRC $DATASET_DIR/train.src-tgt.src --bpe_model $SENTENCEPIECE_MODEL
-python ./apply_sp.py $TRAIN_TGT $DATASET_DIR/train.src-tgt.tgt --bpe_model $SENTENCEPIECE_MODEL
-python ./apply_sp.py $VALID_SRC $DATASET_DIR/valid.src-tgt.src --bpe_model $SENTENCEPIECE_MODEL
-python ./apply_sp.py $VALID_TGT $DATASET_DIR/valid.src-tgt.tgt --bpe_model $SENTENCEPIECE_MODEL
-python ./apply_sp.py $TEST_SRC $DATASET_DIR/test.src-tgt.src --bpe_model $SENTENCEPIECE_MODEL
-python ./apply_sp.py $TEST_TGT $DATASET_DIR/test.src-tgt.tgt --bpe_model $SENTENCEPIECE_MODEL
+python ./apply_sp.py $TRAIN_SRC $DATASET_DIR/train.src-tgt --bpe_model $SENTENCEPIECE_MODEL
+python ./apply_sp.py $VALID_SRC $DATASET_DIR/valid.src-tgt --bpe_model $SENTENCEPIECE_MODEL
+python ./apply_sp.py $TEST_SRC $DATASET_DIR/test.src-tgt --bpe_model $SENTENCEPIECE_MODEL
 ```
 ```
 fairseq-preprocess \
@@ -34,7 +32,7 @@ fairseq-preprocess \
     --tgtdict ${DICT}
 ```
 ## Finetune
-If finetune for text classification
+
 ```
 fairseq-train data-bin/ \
     --restore-file $ROBERTA_PATH \
