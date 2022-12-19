@@ -13,7 +13,7 @@ sentencepiece <br>
 tensorboardX (optional) <br>
 
 ## Preprocess
-データ形式はsrc文とlabelの間にタブ区切りを想定しています。
+データ形式はtextとlabelの間にタブ区切りを想定しています。
 ```
 python ./apply_sp.py $TRAIN_SRC $DATASET_DIR/train.src-tgt --bpe_model $SENTENCEPIECE_MODEL
 python ./apply_sp.py $VALID_SRC $DATASET_DIR/valid.src-tgt --bpe_model $SENTENCEPIECE_MODEL
@@ -32,7 +32,6 @@ fairseq-preprocess \
     --tgtdict ${DICT}
 ```
 ## Finetune
-
 ```
 fairseq-train data-bin/ \
     --restore-file $ROBERTA_PATH \
