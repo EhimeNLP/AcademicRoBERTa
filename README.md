@@ -5,7 +5,7 @@ A Japanese Masked Language Model for Academic Domain(https://aclanthology.org/20
 
 ## Download
 ```
-
+wget aiweb.cs.ehime-u.ac.jp/~yamauchi/academic_model/Academic_RoBERTa_base.tar
 ```
 ## Requirements
 Python >= 3.8 <br>
