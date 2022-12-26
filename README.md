@@ -2,6 +2,25 @@
 
 We pretrained a RoBERTa-based Japanese masked language model on paper abstracts from the academic database CiNii Articles.  
 A Japanese Masked Language Model for Academic Domain(https://aclanthology.org/2022.sdp-1.16/)
+```
+@inproceedings{yamauchi-etal-2022-japanese,
+    title = "A {J}apanese Masked Language Model for Academic Domain",
+    author = "Yamauchi, Hiroki  and
+      Kajiwara, Tomoyuki  and
+      Katsurai, Marie  and
+      Ohmukai, Ikki  and
+      Ninomiya, Takashi",
+    booktitle = "Proceedings of the Third Workshop on Scholarly Document Processing",
+    month = oct,
+    year = "2022",
+    address = "Gyeongju, Republic of Korea",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.sdp-1.16",
+    pages = "152--157",
+    abstract = "We release a pretrained Japanese masked language model for an academic domain. Pretrained masked language models have recently improved the performance of various natural language processing applications. In domains such as medical and academic, which include a lot of technical terms, domain-specific pretraining is effective. While domain-specific masked language models for medical and SNS domains are widely used in Japanese, along with domain-independent ones, pretrained models specific to the academic domain are not publicly available. In this study, we pretrained a RoBERTa-based Japanese masked language model on paper abstracts from the academic database CiNii Articles. Experimental results on Japanese text classification in the academic domain revealed the effectiveness of the proposed model over existing pretrained models.",
+}
+
+```
 
 ## Download
 They include a pretrained roberta model (700000.pt), a sentencepiece model (sp.model) and a dictionary (dict.txt), Code for applying sentencepiece(apply_sp.py) .
