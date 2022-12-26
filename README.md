@@ -4,6 +4,7 @@ We pretrained a RoBERTa-based Japanese masked language model on paper abstracts 
 A Japanese Masked Language Model for Academic Domain(https://aclanthology.org/2022.sdp-1.16/)
 
 ## Download
+They include a pretrained roberta model (700000.pt), a sentencepiece model (sp.model) and a dictionary (dict.txt), Code for applying sentencepiece(apply_sp.py) .
 ```
 wget aiweb.cs.ehime-u.ac.jp/~yamauchi/academic_model/Academic_RoBERTa_base.tar
 ```
@@ -14,7 +15,8 @@ sentencepiece <br>
 tensorboardX (optional) <br>
 
 ## Preprocess
-データ形式はtextとlabelの間にタブ区切りを想定しています。
+The data format assumes a tab delimiter between text and label.
+
 ```
 python ./apply_sp.py $TRAIN_SRC $DATASET_DIR/train.src-tgt --bpe_model $SENTENCEPIECE_MODEL
 python ./apply_sp.py $VALID_SRC $DATASET_DIR/valid.src-tgt --bpe_model $SENTENCEPIECE_MODEL
@@ -33,6 +35,7 @@ fairseq-preprocess \
     --tgtdict ${DICT}
 ```
 ## Finetune
+This work was supported by papers in Japanese.
 ```
 fairseq-train data-bin/ \
     --restore-file $ROBERTA_PATH \
