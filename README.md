@@ -21,7 +21,7 @@ A Japanese Masked Language Model for Academic Domain(https://aclanthology.org/20
 ## Download
 They include a pretrained roberta model (700000.pt), a sentencepiece model (sp.model) and a dictionary (dict.txt), Code for applying sentencepiece (apply_sp.py) .
 ```
-wget aiweb.cs.ehime-u.ac.jp/~yamauchi/academic_model/Academic_RoBERTa_base.tar
+wget aiweb.cs.ehime-u.ac.jp/~yamauchi/academic_model/Academic_RoBERTa_base.tar.gz
 ```
 ## Requirements
 Python >= 3.8 <br>
