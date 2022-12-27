@@ -52,6 +52,7 @@ fairseq-preprocess \
 ```
 ## Finetune
 This work was supported by papers in Japanese.
+The procedure for sentence classification using AcademicRoBERTa is as follows.
 ```
 fairseq-train data-bin/ \
     --restore-file $ROBERTA_PATH \
