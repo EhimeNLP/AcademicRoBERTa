@@ -25,8 +25,8 @@ wget aiweb.cs.ehime-u.ac.jp/~yamauchi/academic_model/Academic_RoBERTa_base.tar.g
 ```
 ## Requirements
 Python >= 3.8 <br>
-fairseq == 0.12.2 (In working order)<br>
-sentencepiece <br>
+[fairseq](https://github.com/facebookresearch/fairseq) == 0.12.2 (In working order)<br>
+[sentencepiece](https://github.com/google/sentencepiece) <br>
 tensorboardX (optional) <br>
 
 ## Preprocess
