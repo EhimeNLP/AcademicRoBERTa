@@ -21,7 +21,7 @@ We pretrained a RoBERTa-based Japanese masked language model on paper abstracts 
 ## Download
 They include a pretrained roberta model (700000_model.pt), a sentencepiece model (sp.model) , a dictionary (dict.txt) and code for applying sentencepiece (apply-sp.py) .
 ```
-wget aiweb.cs.ehime-u.ac.jp/~yamauchi/academic_model/Academic_RoBERTa_base.tar.gz
+wget http://aiweb.cs.ehime-u.ac.jp/~yamauchi/academic_model/Academic_RoBERTa_base.tar.gz
 ```
 ## Requirements
 Python >= 3.8 <br>
