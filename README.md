@@ -31,7 +31,7 @@ tensorboardX (optional) <br>
 
 ## Preprocess
 We applied SentencePiece for subword segmentation. <br>
-The data format assumes a tab delimiter between text and label.
+Prepare datasets ($TRAIN_SRC, ...), which format assumes a tab delimiter between text and label.
 
 ```
 python ./apply_sp.py $TRAIN_SRC $DATASET_DIR/train.src-tgt --bpe_model $SENTENCEPIECE_MODEL
