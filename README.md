@@ -76,5 +76,5 @@ fairseq-train data-bin/ \
     --find-unused-parameters
 ```
 ## Training
-Our model was trined masked language modeling equivalent to RoBERTa; 512 tokens per instance, 128 instances per batch, and 0.7M training steps.
+Our model was trined masked language modeling equivalent to RoBERTa; 512 tokens per instance, 128 instances per batch, and 0.7M training steps.  <br>
 Our model was trained on two CPUs (Intel Xeon GOLD 5115) with 192GB RAM and four GPUs (RTX A6000 48GB), The training took about 8 days
