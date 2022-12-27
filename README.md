@@ -30,6 +30,7 @@ Python >= 3.8 <br>
 tensorboardX (optional) <br>
 
 ## Preprocess
+We applied SentencePiece for subword segmentation.
 The data format assumes a tab delimiter between text and label.
 
 ```
