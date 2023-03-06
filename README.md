@@ -78,5 +78,5 @@ fairseq-train data-bin/ \
     --find-unused-parameters
 ```
 ## Citing
-Hiroki Yamauchi，Tomoyuki Kajiwara，Marie Katsurai，Ikki Ohmukai，Takashi Ninomiya．<br>[A Japanese Masked Language Model for Academic Domain.](https://aclanthology.org/2022.sdp-1.16/) <br>In Proceedings of the Third Workshop on Scholarly Document Processing
+Hiroki Yamauchi，Tomoyuki Kajiwara，Marie Katsurai，Ikki Ohmukai，Takashi Ninomiya．<br>[A Japanese Masked Language Model for Academic Domain.](https://aclanthology.org/2022.sdp-1.16/) <br>In Proceedings of the Third Workshop on Scholarly Document Processing <br>
 山内洋輝, 梶原智之, 桂井麻里衣, 大向一輝, 二宮崇. 学術ドメインに特化した日本語事前訓練モデルの構築. 言語処理学会第29回年次大会 [[PDF]](https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/Q11-4.pdf)  
