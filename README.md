@@ -2,21 +2,7 @@
 
 We pretrained a RoBERTa-based Japanese masked language model on paper abstracts from the academic database CiNii Articles.  
 [A Japanese Masked Language Model for Academic Domain](https://aclanthology.org/2022.sdp-1.16/)
-```
-@inproceedings{yamauchi-etal-2022-japanese,
-    title = "A {J}apanese Masked Language Model for Academic Domain",
-    author = "Yamauchi, Hiroki  and
-      Kajiwara, Tomoyuki  and
-      Katsurai, Marie  and
-      Ohmukai, Ikki  and
-      Ninomiya, Takashi",
-    booktitle = "Proceedings of the Third Workshop on Scholarly Document Processing",
-    year = "2022",
-    url = "https://aclanthology.org/2022.sdp-1.16",
-    pages = "152--157",
-}
 
-```
 
 ## Download
 They include a pretrained roberta model (700000_model.pt), a sentencepiece model (sp.model) , a dictionary (dict.txt) and code for applying sentencepiece (apply-sp.py) .
@@ -84,3 +70,18 @@ fairseq-train data-bin/ \
 - 山内洋輝, 梶原智之, 桂井麻里衣, 大向一輝, 二宮崇. <br> 
   [学術ドメインに特化した日本語事前訓練モデルの構築](https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/Q11-4.pdf). <br> 
   言語処理学会第29回年次大会, pp.2842-2846, 2023.
+```
+@inproceedings{yamauchi-etal-2022-japanese,
+    title = "A {J}apanese Masked Language Model for Academic Domain",
+    author = "Yamauchi, Hiroki  and
+      Kajiwara, Tomoyuki  and
+      Katsurai, Marie  and
+      Ohmukai, Ikki  and
+      Ninomiya, Takashi",
+    booktitle = "Proceedings of the Third Workshop on Scholarly Document Processing",
+    year = "2022",
+    url = "https://aclanthology.org/2022.sdp-1.16",
+    pages = "152--157",
+}
+
+```
