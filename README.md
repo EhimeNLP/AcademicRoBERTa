@@ -85,3 +85,4 @@ fairseq-train data-bin/ \
 }
 
 ```
+license: apache-2.0
