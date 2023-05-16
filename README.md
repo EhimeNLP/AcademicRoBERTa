@@ -10,7 +10,7 @@ They include a pretrained roberta model (700000_model.pt), a sentencepiece model
 wget http://aiweb.cs.ehime-u.ac.jp/~yamauchi/academic_model/Academic_RoBERTa_base.tar.gz
 ```
 
-## Hugginface
+## Hugging Face
 https://huggingface.co/EhimeNLP/AcademicRoBERTa
 
 ## Requirements
