@@ -9,6 +9,10 @@ They include a pretrained roberta model (700000_model.pt), a sentencepiece model
 ```
 wget http://aiweb.cs.ehime-u.ac.jp/~yamauchi/academic_model/Academic_RoBERTa_base.tar.gz
 ```
+
+## Hugginface
+https://huggingface.co/EhimeNLP/AcademicRoBERTa
+
 ## Requirements
 Python >= 3.8 <br>
 [fairseq](https://github.com/facebookresearch/fairseq) == 0.12.2 (In working order)<br>
