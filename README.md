@@ -24,9 +24,9 @@ We applied SentencePiece for subword segmentation. <br>
 Prepare datasets ($TRAIN_SRC, ...), which format assumes a tab delimiter between text and label.
 
 ```
-python ./apply_sp.py $TRAIN_SRC $DATASET_DIR/train.src-tgt --bpe_model $SENTENCEPIECE_MODEL
-python ./apply_sp.py $VALID_SRC $DATASET_DIR/valid.src-tgt --bpe_model $SENTENCEPIECE_MODEL
-python ./apply_sp.py $TEST_SRC $DATASET_DIR/test.src-tgt --bpe_model $SENTENCEPIECE_MODEL
+python ./apply_sp.py $TRAIN_SRC $DATASET_DIR/train.src-tgt -bpe_model $SENTENCEPIECE_MODEL
+python ./apply_sp.py $VALID_SRC $DATASET_DIR/valid.src-tgt -bpe_model $SENTENCEPIECE_MODEL
+python ./apply_sp.py $TEST_SRC $DATASET_DIR/test.src-tgt -bpe_model $SENTENCEPIECE_MODEL
 ```
 ```
 fairseq-preprocess \
