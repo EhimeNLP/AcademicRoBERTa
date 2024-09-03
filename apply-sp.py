@@ -23,14 +23,16 @@ def apply_sp():
         tokenized_sentence = sp.EncodeAsPieces(l_list[0])
         tokenized_sentence = ' '.join(tokenized_sentence)
         tokenized_lines.append(tokenized_sentence)
-        label_lines.append(l_list[1])
+        tokenized_target = sp.EncodeAsPieces(l_list[1])
+        tokenized_target = " ".join(tokenized_target)
+        label_lines.append(tokenized_target)
 
     del lines
 
     with open(opt.save_file + '.src' , mode='w') as f:
         f.write('\n'.join(tokenized_lines))
     with open(opt.save_file + '.tgt' , mode='w') as f:
-        f.write(''.join(label_lines))
+        f.write('\n'.join(label_lines))
 
 def main():
     apply_sp()
